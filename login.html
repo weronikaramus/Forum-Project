@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="images/ww.png" />
+
+		<title>Log in page</title>
+
+		<link href="css/style.css" rel="stylesheet" />
+
+		<meta />
+	</head>
+	<body>
+		<div class="login-form">
+			<p class="form-title">Log in</p>
+			<form
+				id="form"
+				class="form"
+				action="login.php"
+				method="post"
+				autocomplete="on"
+			>
+				<div class="form-control">
+					<label for="email">Email:</label>
+					<input type="email" placeholder="example@mail.com" id="email" name="email"/>
+					<small>Incorrect input!</small>
+				</div>
+				<div class="form-control">
+					<label for="passwd">Password:</label>
+					<input type="password" placeholder="********" id="passwd" name="passwd"/>
+					<small>Incorrect input!</small>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+			<a href="register.html" class="form-signup-link">Don't have an account? Sign up!</a>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

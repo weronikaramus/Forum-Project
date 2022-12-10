@@ -16,6 +16,7 @@ body {
 
 
 /* form */
+.register-form,
 .login-form {
     position: absolute;
     width: 25rem;
@@ -30,15 +31,20 @@ body {
     box-shadow: 0 0 20px white;
     border-radius: 50px;
     padding: 3rem;
-    
 
 }
-.form-title{
+
+.login-form .form-title{
     margin-bottom: 4rem;
     font-size: 2rem;
     font-weight:bolder;
 }
 
+.register-form .form-title{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight:bolder;
+}
 
 .form-signup-link{
     position: absolute;
@@ -51,10 +57,26 @@ body {
     padding-top: 3rem;
 }
 
-.form-control {
+.form-login-link{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #DA83FF;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.register-form .form-control {
 	position: relative;
-	/* padding-bottom: 3rem; */
-    margin: 2rem 0 3rem;
+	padding-bottom: 1rem;
+    /* margin: 2rem 0 3rem; */
+}
+
+.login-form .form-control {
+	position: relative;
+	padding-bottom: 3rem;
 }
 
 .form-control label {
