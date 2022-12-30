@@ -6,72 +6,96 @@
 	color: #000;
 	font-size: 18px;
 }
+
 body {
-    background-color: #434393;
-    background-image: url("../img/bg-img.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+	background-color: #434393;
+	background-image: url("../img/bg-img.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
+.main-container {
+	position: absolute;
+	width: 80%;
+	height: 90%;
+	text-align: left;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	background: #f9f6f6;
+	box-shadow: 0 0 20px white;
+	border-radius: 50px;
+	padding: 1rem 3rem 3rem;
+}
+
+.site-title {
+	/* display: block; */
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: 900;
+	text-align: center;
+}
 
 /* form */
 .register-form,
 .login-form {
-    position: absolute;
-    width: 25rem;
-    height: 35rem;
-    display: inline-block;
-    text-align: left;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    background: #F9F6F6;
-    box-shadow: 0 0 20px white;
-    border-radius: 50px;
-    padding: 3rem;
-
+	position: absolute;
+	width: 25rem;
+	height: 35rem;
+	display: inline-block;
+	text-align: left;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	background: #f9f6f6;
+	box-shadow: 0 0 20px white;
+	border-radius: 50px;
+	padding: 3rem;
 }
 
-.login-form .form-title{
-    margin-bottom: 4rem;
-    font-size: 2rem;
-    font-weight:bolder;
+.login-form .form-title {
+	margin-bottom: 4rem;
+	font-size: 2rem;
+	font-weight: 900;
 }
 
-.register-form .form-title{
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    font-weight:bolder;
+.register-form .form-title {
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: 900;
 }
 
-.form-signup-link{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    color: #DA83FF;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 3rem;
+.form-signup-link {
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+	transform: translate(-50%, 0%);
+	color: #da83ff;
+	text-decoration: none;
+	text-align: center;
+	/* margin-top: 2rem; */
+	/* padding-top: 3rem; */
 }
 
-.form-login-link{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    color: #DA83FF;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 2rem;
+.form-login-link {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translate(-50%, 0%);
+	color: #da83ff;
+	text-decoration: none;
+	text-align: center;
+	/* margin-top: 2rem; */
+	/* padding-top: 2rem; */
 }
 
 .register-form .form-control {
 	position: relative;
 	padding-bottom: 1rem;
-    /* margin: 2rem 0 3rem; */
+	/* margin: 2rem 0 3rem; */
 }
 
 .login-form .form-control {
@@ -116,16 +140,126 @@ body {
 }
 
 .form button {
-	background-color: #DA83FF;
-	border: 2px solid #DA83FF;
+	background-color: #da83ff;
+	border: 2px solid #da83ff;
 	border-radius: 50px;
 	color: #fff;
 	display: block;
 	font-size: 16px;
 	padding: 10px;
-	margin: 2rem 0 2rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	margin: 2rem 0 5rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 30%;
+}
+
+.login-error {
+	color: red;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Navbar */
+
+nav li {
+	list-style: none;
+	display: inline;
+	float: right;
+}
+nav li:first-child {
+	float: left;
+}
+nav a {
+	display: block;
+	padding: 10px;
+}
+nav form {
+	display: inline;
+	padding-right: 1rem;
+}
+nav .form-control input {
+	display: inline;
+	width: 15rem;
+	padding-left: 2rem;
+	background-image: url("../img/search.png");
+	background-size: 1rem;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+}
+
+nav img {
+	width: 25px;
+}
+
+.back-button {
+	background-color: #da83ff;
+	border: 2px solid #da83ff;
+	border-radius: 50px;
+	color: #fff;
+	display: block;
+	font-size: 15px;
+	padding-left: 10px;
+	/* padding: 10px; */
+	margin-top: 10px;
+	position: absolute;
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	width: 8%;
+	height: 30px;
+}
+.change-button {
+	background-color: #da83ff;
+	border: 2px solid #da83ff;
+	border-radius: 50px;
+	color: #fff;
+	display: block;
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+	/* margin-top: 10px; */
+	position: absolute;
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
+
+	width: 20%;
+	height: 30px;
+}
+div .account-info {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	padding: 2rem;
+}
+.account-info td {
+	padding-bottom: 2rem;
+	padding-right: 4rem;
+	padding-top: 0;
+	/* font-weight: 500; */
+}
+.delete-account-button {
+	background-color: #982b65;
+	border: 2px solid #982b65;
+	border-radius: 50px;
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	/* padding: 10px; */
+	margin-bottom: 20px;
+	position: absolute;
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	width: 30%;
+	height: 30px;
+}
+
+content h1 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
